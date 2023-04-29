@@ -1,0 +1,16 @@
+.about {
+  padding: 0 8vw;
+}
+.about header {
+  background-color: rgb(231, 129, 107);
+  background-image: url("./images/about/desktop/bg-pattern-hero-about-desktop.svg");
+  border-radius: 10px;
+  display: flex;
+  height: 480px;
+  margin-bottom: 160px;
+  z-index: 1;
+}
+.about .right {
+  position: absolute;
+  top: 475px;
+}/*# sourceMappingURL=Combine.css.map */
