@@ -58,7 +58,7 @@ const Home = () => {
           <p><span>VIEW PROJECTS</span> <img src={arrow} alt="" /></p>
           <span className="hover"></span>
         </NavLink>
-        <NavLink data-aos="fade-up-left" to="/graphic" id="graphic">
+        <NavLink data-aos={width > 520 ?"fade-up-left":'fade-right'} to="/graphic" id="graphic">
           <h3>GRAPHIC DESIGN</h3>
           <p><span>VIEW PROJECTS</span> <img src={arrow} alt="" /></p>
           <span className="hover"></span>
