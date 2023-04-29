@@ -304,6 +304,15 @@
     }
     .designer-two{
       padding: 0 8vw;
+      .web{
+        padding-top: 53px;
+      }
+      a{
+        h3{
+          font-size: 28px;
+          margin-bottom: 12px;
+        }
+      }
     }
   }
 }

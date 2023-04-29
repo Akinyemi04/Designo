@@ -340,6 +340,7 @@
   }
   .home .two a span {
     width: -webkit-fill-available;
+    height: -webkit-fill-available;
   }
   .home .two #web {
     background: url("./images/home/tablet/image-web-design.jpg");

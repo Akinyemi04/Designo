@@ -275,6 +275,7 @@
         }
         h2 {
           font-size: 32px;
+          width: auto;
         }
       }
       img {
@@ -477,14 +478,6 @@
         -webkit-box-shadow: 0 0 0 50px white inset;/*your box-shadow*/
         -webkit-text-fill-color: #333;
     } 
-    //   input:-webkit-autofill{
-    //     background-color: blue !important;
-    //     color: white !important;
-    //   }
-    //   input:autofill{
-    //     background-color: blue !important;
-    //     color: white !important;
-    //   }
       button {
         width: 152px;
         height: 56px;
@@ -502,6 +495,7 @@
         position: absolute;
         right: 0;
         bottom: 35px;
+        color: black;
         transition: background-color 0.2s linear, color 0.2s linear;
       }
       button:hover {

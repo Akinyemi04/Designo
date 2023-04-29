@@ -25,7 +25,7 @@ const Header = () => {
     const nav = document.getElementById('nav')
     const icon = document.getElementById('nav-icon4')
     const body = document.getElementsByTagName('body')[0]
-    if (width > 520){
+    if (width < 520){
       icon.classList.toggle('open')
       nav.removeAttribute('class','toggle')
       body.style.overflowY = 'scroll'

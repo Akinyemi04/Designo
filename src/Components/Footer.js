@@ -16,7 +16,6 @@ const Footer = () => {
   const padding = useSelector((val)=>{
     return val.home.footer_padding
   })
-  console.log(padding)
   useEffect(() => {
     Aos.init({
       offset:(window.screen.availHeight * .01)

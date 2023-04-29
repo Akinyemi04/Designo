@@ -20,6 +20,7 @@ import { useDispatch } from "react-redux";
 import { change_home } from "./store";
 
 const About = () => {
+  const width = window.screen.availWidth
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(change_home.change_footer_paddingz('144px 8vw 72px 8vw'))
@@ -78,21 +79,21 @@ const About = () => {
         </aside>
       </section>
       <section className="country">
-        <div data-aos="zoom-in" data-aos-delay="200">
+        <div data-aos="zoom-in" data-aos-delay={ width >520 ?"200":'0'}>
           <article className="canada">
             <img src={canada} alt="" />
           </article>
           <span>CANADA</span>
           <button>SEE LOCATION</button>
         </div>
-        <div data-aos="zoom-in" data-aos-delay="400">
+        <div data-aos="zoom-in" data-aos-delay={width > 520 ?"400":'0'}>
           <article className="australia">
             <img src={australia} alt="" />
           </article>
           <span>AUSTRALIA</span>
           <button>SEE LOCATION</button>
         </div>
-        <div data-aos="zoom-in" data-aos-delay="600">
+        <div data-aos="zoom-in" data-aos-delay={width >520 ?"600":'0'}>
           <article className="uk">
             <img src={uk} alt="" />
           </article>

@@ -297,4 +297,11 @@
   .designer .designer-two {
     padding: 0 8vw;
   }
+  .designer .designer-two .web {
+    padding-top: 53px;
+  }
+  .designer .designer-two a h3 {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
 }/*# sourceMappingURL=Design.css.map */

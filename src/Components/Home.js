@@ -17,7 +17,7 @@ const Home = () => {
   const background_image = useSelector((val)=>{
     return val.home.img_display
   })
-  const disatch = useDispatch()
+  const width = window.screen.width
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(change_home.change_footer_paddingz('144px 8vw 72px 8vw'))
@@ -48,12 +48,12 @@ const Home = () => {
       </section>
       <img style={{visibility:background_image}} id="bg" src={bg} alt="" />
       <section className="two">
-        <NavLink data-aos="fade-right" data-aos-delay="300" to="/web" id="web">
+        <NavLink data-aos="fade-right" data-aos-delay={width > 520 ?"300":'0'} to="/web" id="web">
           <h3>WEB DESIGN</h3>
           <p><span>VIEW PROJECTS</span> <img src={arrow} alt="" /></p>
           <span className="hover"></span>
         </NavLink>
-        <NavLink data-aos="fade-left" data-aos-delay="600" to="/app" id="app">
+        <NavLink data-aos="fade-left" data-aos-delay={width > 520 ? "600":'0'} to="/app" id="app">
           <h3>APP DESIGN</h3>
           <p><span>VIEW PROJECTS</span> <img src={arrow} alt="" /></p>
           <span className="hover"></span>
