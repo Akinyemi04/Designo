@@ -8,10 +8,13 @@ import australia_one from "./images/locations/tablet/image-map-australia.png";
 import canada_one from "./images/locations/tablet/image-map-canada.png";
 import uk_one from "./images/locations/tablet/image-map-uk.png";
 import { change_home } from "./store";
+import { useEffect } from "react";
 const Location = () => {
   const width = window.screen.availWidth
-  const dispatch = useDispatch
-  dispatch(change_home.change_footer_paddingz('144px 8vw 72px 8vw'))
+  const dispatch = useDispatch()
+  useEffect(()=>{
+    dispatch(change_home.change_footer_paddingz('144px 8vw 72px 8vw'))
+  },[])
   return (
     <div className="location_page">
       <section className="sectioning heading"> 

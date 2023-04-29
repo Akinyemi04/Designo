@@ -66,7 +66,7 @@ const Graphic = () => {
           </p>
           <span className="hover"></span>
         </NavLink>
-        <NavLink data-aos='fade-left' className="web" to="/web">
+        <NavLink  data-aos={width >520 ?"fade-left":'fade-right'} className="web" to="/web">
           <h3> WEB DESIGN</h3>
           <p>
             <span>VIEW PROJECTS</span> <img src={arrow} alt="" />

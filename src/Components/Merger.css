@@ -283,6 +283,8 @@
 @media screen and (max-width: 520px) {
   .about {
     padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
   }
   .about header {
     margin-bottom: 0px;

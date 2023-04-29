@@ -86,7 +86,7 @@ const Happ = () => {
           </p>
           <span className="hover"></span>
         </NavLink>
-        <NavLink data-aos='fade-left' className="graphic" to="/graphic">
+        <NavLink  data-aos={width >520 ?"fade-left":'fade-right'} className="graphic" to="/graphic">
           <h3> GRAPHIC DESIGN</h3>
           <p>
             <span>VIEW PROJECTS</span> <img src={arrow} alt="" />

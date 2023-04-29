@@ -254,6 +254,8 @@
 @media screen and (max-width: "520px") {
   .about {
     padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
     header {
       margin-bottom: 0px;
       border-radius: 0px;
