@@ -31,18 +31,18 @@ const Contact = () => {
     if(name.length === 0){
       name_el.nextElementSibling.style.opacity='1'
     }
-    else if (phone.length === 0){
-      phone_el.nextElementSibling.style.opacity = '1'
-    }
     else if ( email.length === 0){
       email_el.nextElementSibling.style.opacity = '1'
 
+    }
+    else if (phone.length === 0){
+      phone_el.nextElementSibling.style.opacity = '1'
     }
     else if (message.length === 0){
       message_el.nextElementSibling.style.opacity= '1'
     }
     else{
-      
+
     }
   }
   return (
@@ -59,7 +59,7 @@ const Contact = () => {
         </aside>
         <form action="">
           <div className="">
-            <input id="name"
+            <input autoComplete="off" id="name"
               onChange={(e) => {
                 dispatch(change_home.change_name(e.target.value));
               }}
@@ -69,7 +69,7 @@ const Contact = () => {
             <span>Can’t be empty <ErrorIcon className="icon"/></span>
           </div>
           <div>
-            <input id="email"
+            <input autoComplete="off" id="email"
               onChange={(e) => {
                 dispatch(change_home.change_email(e.target.value));
               }}
@@ -79,7 +79,7 @@ const Contact = () => {
              <span>Can’t be empty <ErrorIcon className="icon"/></span>
           </div>
           <div>
-            <input id="phone"
+            <input autoComplete="off" id="phone"
               onChange={(e) => {
                 dispatch(change_home.change_phone(e.target.value));
               }}

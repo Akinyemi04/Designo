@@ -467,12 +467,24 @@
         line-height: 26px;
         font-weight: 500;
       }
-      input:-webkit-autofill{
-        background-color: blue !important;
-      }
-      input:autofill{
-        background-color: blue !important;
-      }
+      input:-webkit-autofill {
+        -webkit-box-shadow:0 0 0 50px rgba(231,129,107,0.5) inset; /* Change the color to your own background color */
+        -webkit-text-fill-color: white;
+        
+    }
+    
+    input:-webkit-autofill:focus {
+        -webkit-box-shadow: 0 0 0 50px white inset;/*your box-shadow*/
+        -webkit-text-fill-color: #333;
+    } 
+    //   input:-webkit-autofill{
+    //     background-color: blue !important;
+    //     color: white !important;
+    //   }
+    //   input:autofill{
+    //     background-color: blue !important;
+    //     color: white !important;
+    //   }
       button {
         width: 152px;
         height: 56px;

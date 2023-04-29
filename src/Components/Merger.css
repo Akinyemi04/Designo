@@ -502,10 +502,12 @@
   font-weight: 500;
 }
 .contact_page .form_section form input:-webkit-autofill {
-  background-color: blue !important;
+  -webkit-box-shadow: 0 0 0 50px rgba(231, 129, 107, 0.5) inset; /* Change the color to your own background color */
+  -webkit-text-fill-color: white;
 }
-.contact_page .form_section form input:autofill {
-  background-color: blue !important;
+.contact_page .form_section form input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 50px white inset; /*your box-shadow*/
+  -webkit-text-fill-color: #333;
 }
 .contact_page .form_section form button {
   width: 152px;
