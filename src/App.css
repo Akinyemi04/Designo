@@ -9,6 +9,7 @@ body {
   font-family: "jost", sans-serif;
   padding-top: 64px;
   overflow-x: hidden;
+  width: 100vw;
 }
 
 .main-header {
@@ -208,7 +209,7 @@ footer .second .icons span:hover {
   color: rgb(255, 173, 155);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 777px) {
   .mini-footer {
     display: flex;
     flex-direction: column;
@@ -236,6 +237,21 @@ footer .second .icons span:hover {
 @media screen and (max-width: 520px) {
   body {
     padding-top: 35px;
+  }
+  .main-header nav .company {
+    opacity: 0;
+    transform: scale(0);
+    animation: pop 0.4s linear 0.5s 1 forwards;
+  }
+  .main-header nav .location {
+    opacity: 0;
+    transform: scale(0);
+    animation: pop 0.4s linear 0.7s 1 forwards;
+  }
+  .main-header nav .contact {
+    opacity: 0;
+    transform: scale(0);
+    animation: pop 0.4s linear 0.9s 1 forwards;
   }
   .main-header .toggle {
     display: flex;

@@ -65,7 +65,7 @@ const Home = () => {
         </NavLink>
       </section>
       <section className="three">
-        <div data-aos='zoom-in' data-aos-delay='200'>
+        <div data-aos='zoom-in' data-aos-delay={width > 520 ?'200':'0'}>
           <aside >
             <img src={office} alt="" />
           </aside>
@@ -76,7 +76,7 @@ const Home = () => {
             technology into exciting new solutions.
           </p>
         </div>
-        <div data-aos='zoom-in' data-aos-delay='400'>
+        <div data-aos='zoom-in' data-aos-delay={width > 520 ?'400':'0'}>
           <aside className="resourceful">
             <img src={tea} alt="" />
           </aside>
@@ -87,7 +87,7 @@ const Home = () => {
             guarantees superior results that fulfill our clients needs.
           </p>
         </div>
-        <div data-aos='zoom-in' data-aos-delay='650'>
+        <div data-aos='zoom-in' data-aos-delay={width > 520 ?'650':'0'}>
           <aside className="special friendly">
             <img src={friend} alt="" />
           </aside>

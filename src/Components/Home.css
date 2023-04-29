@@ -413,6 +413,7 @@
   .home .two a {
     overflow: hidden;
     margin-bottom: 24px;
+    height: 250px;
   }
   .home .two a h3 {
     margin-top: 40px;
@@ -422,6 +423,9 @@
   .home .two a p {
     font-size: 15px;
     letter-spacing: 5px;
+  }
+  .home .two a san {
+    height: 250px;
   }
   .home .two #web {
     height: 250px;

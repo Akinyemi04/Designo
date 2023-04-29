@@ -8,6 +8,7 @@ body {
   font-family: "jost", sans-serif;
   padding-top: 64px;
   overflow-x: hidden;
+  width: 100vw;
 }
 .main-header {
   overflow-x: hidden;
@@ -204,7 +205,7 @@ footer {
   }
 }
 
-@media screen and (max-width: "767px") {
+@media screen and (max-width: "777px") {
   .mini-footer {
     display: flex;
     flex-direction: column;
@@ -234,6 +235,23 @@ footer {
     padding-top: 35px;
   }
   .main-header {
+    nav{
+      .company {
+        opacity: 0;
+        transform: scale(0);
+        animation: pop 0.4s linear 0.5s 1 forwards;
+      }
+      .location {
+        opacity: 0;
+        transform: scale(0);
+        animation: pop 0.4s linear 0.7s 1 forwards;
+      }
+      .contact {
+        opacity: 0;
+        transform: scale(0);
+        animation: pop 0.4s linear 0.9s 1 forwards;
+      }
+    }
     .toggle{
       display: flex;
       transform: scale(0);
