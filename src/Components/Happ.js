@@ -11,10 +11,13 @@ import bg from "./images/shared/desktop/bg-pattern-leaf.svg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-
+import { useDispatch } from "react-redux";
+import { change_home } from "./store";
 const Happ = () => {
   const width = window.screen.width
+  const dispatch = useDispatch()
   useEffect(() => {
+    dispatch(change_home.change_footer_paddingz('144px 8vw 72px 8vw'))
     Aos.init();
   }, []);
 

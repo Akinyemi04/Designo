@@ -7,6 +7,7 @@ const HomeSluce = createSlice({
         message:'',
         email:'',
         phone:'',
+        footer_padding:'144px 8vw 72px 8vw',
         img_display:'hidden'
     },
     reducers:{
@@ -38,6 +39,12 @@ const HomeSluce = createSlice({
             return{
                 ...state,
                 img_display:action.payload
+            }
+        },
+        change_footer_paddingz(state,action){
+            return{
+                ...state,
+                footer_padding:action.payload
             }
         }
     }

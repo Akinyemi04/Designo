@@ -6,6 +6,7 @@ import bg from "./images/shared/desktop/bg-pattern-leaf.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { change_home } from "./store";
 import ErrorIcon from '@mui/icons-material/Error';
+import { useEffect } from "react";
 
 const Contact = () => {
   const phone = useSelector((val) => {
@@ -21,6 +22,10 @@ const Contact = () => {
     return val.home.email;
   });
   const dispatch = useDispatch();
+  useEffect(()=>{
+    dispatch(change_home.change_footer_paddingz('72px 8vw 72px 8vw'))
+  },[])
+
 
   function Submit(e) {
     const name_el = document.getElementById('name')

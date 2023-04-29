@@ -9,11 +9,14 @@ import science from './images/graphic-design/desktop/image-science.jpg'
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { change_home } from "./store";
+import { useDispatch } from "react-redux";
 
 const Graphic = () => {
   const width = window.screen.width
-  console.log(width)
+  const dispatch = useDispatch()
   useEffect(() => {
+    dispatch(change_home.change_footer_paddingz('144px 8vw 72px 8vw'))
     Aos.init();
   }, []);
   return (

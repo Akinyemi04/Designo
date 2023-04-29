@@ -1,3 +1,4 @@
+import { useDispatch } from "react-redux";
 import "./Merger.css";
 import Mini_Footer from "./Mini_Footer";
 import desktop from "./images/locations/desktop/image-map-australia.png";
@@ -6,9 +7,11 @@ import desktop_two from "./images/locations/desktop/image-map-united-kingdom.png
 import australia_one from "./images/locations/tablet/image-map-australia.png";
 import canada_one from "./images/locations/tablet/image-map-canada.png";
 import uk_one from "./images/locations/tablet/image-map-uk.png";
-
+import { change_home } from "./store";
 const Location = () => {
   const width = window.screen.availWidth
+  const dispatch = useDispatch
+  dispatch(change_home.change_footer_paddingz('144px 8vw 72px 8vw'))
   return (
     <div className="location_page">
       <section className="sectioning heading"> 

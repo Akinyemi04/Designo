@@ -16,9 +16,13 @@ import tablet_two from "./images/about/tablet/image-real-deal.jpg";
 import mobile from './images/about/mobile/image-about-hero.jpg'
 import mobile_one from './images/about/mobile/image-world-class-talent.jpg'
 import mobile_two from './images/about/mobile/image-real-deal.jpg'
+import { useDispatch } from "react-redux";
+import { change_home } from "./store";
 
 const About = () => {
+  const dispatch = useDispatch()
   useEffect(() => {
+    dispatch(change_home.change_footer_paddingz('144px 8vw 72px 8vw'))
     Aos.init();
   }, []);
 

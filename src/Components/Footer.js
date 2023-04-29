@@ -9,16 +9,21 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import PinterestIcon from "@mui/icons-material/Pinterest";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import { useSelector } from "react-redux";
 
 
 const Footer = () => {
+  const padding = useSelector((val)=>{
+    return val.home.footer_padding
+  })
+  console.log(padding)
   useEffect(() => {
     Aos.init({
       offset:(window.screen.availHeight * .01)
     });
   }, []);
   return (
-    <footer>
+    <footer style={{padding:padding}}>
       <section className="first">
         <img data-aos="zoom-in-up" data-aos-delay="100" src={logo} alt="" />
         <hr />

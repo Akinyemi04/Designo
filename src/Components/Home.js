@@ -17,8 +17,10 @@ const Home = () => {
   const background_image = useSelector((val)=>{
     return val.home.img_display
   })
+  const disatch = useDispatch()
   const dispatch = useDispatch()
   useEffect(() => {
+    dispatch(change_home.change_footer_paddingz('144px 8vw 72px 8vw'))
     Aos.init();
     const width = window.screen.availWidth
     if(width > 767){
