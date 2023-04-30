@@ -1,5 +1,6 @@
 .designer {
   padding: 0 8vw;
+  position: relative;
 }
 .designer .happ {
   background-position: -28px center;

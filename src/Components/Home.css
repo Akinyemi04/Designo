@@ -1,5 +1,6 @@
 .home {
   padding: 0 8vw;
+  position: relative;
 }
 .home .one {
   position: relative;

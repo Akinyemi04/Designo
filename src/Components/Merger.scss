@@ -1,6 +1,7 @@
 .about,
 .contact_page {
   padding: 0 8vw;
+  position: relative;
   header {
     background-color: rgb(231, 129, 107);
     border-radius: 10px;
@@ -298,6 +299,7 @@
 }
 .location_page {
   padding: 0 8vw;
+  position:relative;
   .heading {
     opacity: 0;
     animation: location_pager 1s linear 1.3s 1 forwards;

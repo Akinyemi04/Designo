@@ -36,7 +36,7 @@ const Header = () => {
   }
   return (
     <header className='main-header'>
-        <img src={logo} alt="" />
+        <NavLink to='/'><img src={logo} alt="" /></NavLink>
         <nav id='nav'> 
             <NavLink onClick={navigate} className='company' to='/about'>OUR COMPANY</NavLink>
             <NavLink onClick={navigate} className='location' to='/location'>LOCATIONS</NavLink>

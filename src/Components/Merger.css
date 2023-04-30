@@ -1,6 +1,7 @@
 .about,
 .contact_page {
   padding: 0 8vw;
+  position: relative;
 }
 .about header,
 .contact_page header {
@@ -324,6 +325,7 @@
 }
 .location_page {
   padding: 0 8vw;
+  position: relative;
 }
 .location_page .heading {
   opacity: 0;
