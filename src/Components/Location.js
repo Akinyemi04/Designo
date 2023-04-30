@@ -46,7 +46,7 @@ const Location = () => {
           <source srcSet={australia_one} media="(max-width:777px)" />
           <img src={desktop} alt="" />
         </picture>
-        <aside data-aos="fade-left" data-aos-delay={width > 777 ? '2100':''}>
+        <aside data-aos={ width > 520 ? "fade-left":"fade-right"} data-aos-delay={width > 777 ? '2100':''}>
           <h2>AUSTRALIA</h2>
           <article>
             <div>
@@ -78,7 +78,7 @@ const Location = () => {
             </div>
           </article>
         </aside>
-        <picture data-aos="fade-left">
+        <picture data-aos={ width > 520 ? "fade-left":"fade-right"}>
           <source srcSet={uk_one} media="(max-width:777px)" />
           <img src={desktop_two} alt="" />
         </picture>
