@@ -13,6 +13,7 @@ import { useSelector } from "react-redux";
 
 
 const Footer = () => {
+  const width = window.screen.width
   const padding = useSelector((val)=>{
     return val.home.footer_padding
   })
@@ -77,19 +78,19 @@ const Footer = () => {
           </p>
         </div>
         <div className="icons">
-          <span data-aos="zoom-in" data-aos-delay="1600">
+          <span data-aos="zoom-in" data-aos-delay= "1600">
             <FacebookIcon/>
           </span>
-          <span data-aos="zoom-in" data-aos-delay="1750">
+          <span data-aos="zoom-in" data-aos-delay={ width > 520 ? "1750":'1600'}>
             <YouTubeIcon/>
           </span>
-          <span data-aos="zoom-in" data-aos-delay="1900">
+          <span data-aos="zoom-in" data-aos-delay={ width > 520 ? "1900": '1600'}>
             <TwitterIcon/>
           </span>
-          <span data-aos="zoom-in" data-aos-delay="2050">
+          <span data-aos="zoom-in" data-aos-delay={width > 520 ? "2050":'1600'}>
             <PinterestIcon/>
           </span>
-          <span data-aos="zoom-in" data-aos-delay="2200">
+          <span data-aos="zoom-in" data-aos-delay={ width > 520 ? "2200":'1600'}>
             <InstagramIcon/>
           </span>
         </div>
