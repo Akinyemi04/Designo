@@ -6,7 +6,7 @@ const Mini_Footer = () => {
         Aos.init();
       }, []);
   return (
-    <div data-aos='fade-zoom-in' data-aos-delay='500' className="mini-footer">
+    <div data-aos-once='true' data-aos='fade-zoom-in' data-aos-delay='500' className="mini-footer">
       <section>
         <h4>Let’s talk about your project</h4>
         <p>
