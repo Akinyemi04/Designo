@@ -13,6 +13,8 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { change_home } from "./store";
+import ScrollToTop from "./ScrollToTop";
+
 const Happ = () => {
   const width = window.screen.width
   const dispatch = useDispatch()
@@ -23,6 +25,7 @@ const Happ = () => {
 
   return (
     <div className="designer ">
+      <ScrollToTop/>
       <header className="happ">
         <h1>App Design</h1>
         <p>

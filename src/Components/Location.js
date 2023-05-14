@@ -9,6 +9,8 @@ import canada_one from "./images/locations/tablet/image-map-canada.png";
 import uk_one from "./images/locations/tablet/image-map-uk.png";
 import { change_home } from "./store";
 import { useEffect } from "react";
+import ScrollToTop from "./ScrollToTop";
+
 const Location = () => {
   const width = window.screen.availWidth
   const dispatch = useDispatch()
@@ -17,6 +19,7 @@ const Location = () => {
   },[])
   return (
     <div className="location_page">
+      <ScrollToTop/>
       <section className="sectioning heading"> 
         <aside>
           <h2>CANADA</h2>

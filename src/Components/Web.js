@@ -14,6 +14,8 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { change_home } from "./store";
+import ScrollToTop from "./ScrollToTop";
+
 
 const Web = () => {
   const width = window.screen.width
@@ -25,6 +27,7 @@ const Web = () => {
 
   return (
     <div className="designer">
+      <ScrollToTop/>
       <header>
         <h1>Web Design</h1>
         <p>We build websites that serve as powerful marketing tools 

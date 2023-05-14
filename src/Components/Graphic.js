@@ -11,6 +11,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { change_home } from "./store";
 import { useDispatch } from "react-redux";
+import ScrollToTop from "./ScrollToTop";
 
 const Graphic = () => {
   const width = window.screen.width
@@ -21,6 +22,7 @@ const Graphic = () => {
   }, []);
   return (
     <div className="designer">
+      <ScrollToTop/>
       <header className="graphick">
         <h1>GRAPHIC Design</h1>
         <p>

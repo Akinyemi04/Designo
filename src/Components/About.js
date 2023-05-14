@@ -18,6 +18,7 @@ import mobile_one from './images/about/mobile/image-world-class-talent.jpg'
 import mobile_two from './images/about/mobile/image-real-deal.jpg'
 import { useDispatch } from "react-redux";
 import { change_home } from "./store";
+import ScrollToTop from "./ScrollToTop";
 
 const About = () => {
   const width = window.screen.availWidth
@@ -29,6 +30,7 @@ const About = () => {
 
   return (
     <div className="about">
+      <ScrollToTop/>
       <header>
         <aside>
           <h1>About Us</h1>
