@@ -1,7 +1,6 @@
 import { useEffect } from 'react'
 import logo from './images/shared/desktop/logo-dark.png'
 import { NavLink } from 'react-router-dom'
-import ScrollToTop from './ScrollToTop'
 
 const Header = () => {
   let width = null 
@@ -38,7 +37,6 @@ const Header = () => {
   }
   return (
     <header className='main-header'>
-      <ScrollToTop/>
         <NavLink to='/'><img src={logo} alt="" /></NavLink>
         <nav id='nav'> 
             <NavLink onClick={navigate} className='company' to='/about'>OUR COMPANY</NavLink>

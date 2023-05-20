@@ -6,7 +6,7 @@
 }
 body {
   font-family: "jost", sans-serif;
-  padding-top: 64px;
+  padding-top: 44px;
   overflow-x: hidden;
   width: 100vw;
 }
@@ -235,6 +235,14 @@ footer {
     padding-top: 35px;
   }
   .main-header {
+    padding-top: 13px;
+    // margin-bottom: 30px;
+    // position: sticky;
+    // top: 0px;
+    // padding: 10px 0; 
+    // z-index: 10;
+    // background-color: transparent;
+    // backdrop-filter: saturate(100%) blur(3px);
     nav{
       .company {
         opacity: 0;
@@ -328,7 +336,7 @@ footer {
         width: 60px;
         height: 35px;
         position: relative;
-        margin: 40px auto;
+        margin: 50px auto;
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
         -o-transform: rotate(0deg);

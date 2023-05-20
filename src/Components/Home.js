@@ -30,6 +30,8 @@ const Home = () => {
       dispatch(change_home.change_img_dispaly('hidden'))
     }
   }, []);
+
+
   return (
     <article className="home">
       <section className="one">
